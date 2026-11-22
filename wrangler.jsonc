@@ -1,0 +1,13 @@
+{
+  "name": "tglc-mini",
+  "main": "worker.ts",
+  "compatibility_date": "2026-11-19",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  }
+}

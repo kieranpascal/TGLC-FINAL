@@ -1,0 +1,617 @@
+2026-11-22T16:40:19.241Z	Initializing build environment...
+2026-11-22T16:40:29.814Z	Success: Finished initializing build environment
+2026-11-22T16:40:31.183Z	Cloning repository...
+2026-11-22T16:40:35.793Z	Restoring from dependencies cache
+2026-11-22T16:40:35.795Z	Restoring from build output cache
+2026-11-22T16:40:35.798Z	Detected the following tools from environment: bun@1.4.4, nodejs@24.22.1
+2026-11-22T16:40:36.052Z	Installing project dependencies: bun install --frozen-lockfile
+2026-11-22T16:40:36.239Z	bun install v1.4.4 (38afee6c8)
+2026-11-22T16:40:37.770Z	
+2026-11-22T16:40:37.771Z	+ @types/node@22.20.5
+2026-11-22T16:40:37.771Z	+ @types/react@19.3.0
+2026-11-22T16:40:37.771Z	+ @types/react-dom@19.3.0
+2026-11-22T16:40:37.771Z	+ autoprefixer@10.7.0
+2026-11-22T16:40:37.771Z	+ esbuild@0.25.12
+2026-11-22T16:40:37.771Z	+ sharp@0.35.5
+2026-11-22T16:40:37.771Z	+ tailwindcss@4.3.5
+2026-11-22T16:40:37.771Z	+ tsx@4.23.15
+2026-11-22T16:40:37.771Z	+ typescript@7.0.2
+2026-11-22T16:40:37.772Z	+ @tailwindcss/vite@4.3.5
+2026-11-22T16:40:37.772Z	+ @vitejs/plugin-react@6.3.0
+2026-11-22T16:40:37.772Z	+ lucide-react@0.546.0
+2026-11-22T16:40:37.772Z	+ motion@12.43.0
+2026-11-22T16:40:37.772Z	+ react@19.3.1
+2026-11-22T16:40:37.772Z	+ react-dom@19.3.1
+2026-11-22T16:40:37.772Z	+ vite@8.3.8
+2026-11-22T16:40:37.772Z	
+2026-11-22T16:40:37.772Z	68 packages installed [1.56s]
+2026-11-22T16:40:38.178Z	Executing user build command: bun run build
+2026-11-22T16:40:38.248Z	$ bun run images && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs
+2026-11-22T16:40:38.251Z	$ node scripts/optimize-images.mjs
+2026-11-22T16:41:31.932Z	[optimize-images] Processed 109 images (421 written, 0 skipped). Manifest written to src/data/imageManifest.json.
+2026-11-22T16:41:32.273Z	(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+2026-11-22T16:41:32.273Z	  - `__dirname` (vite.config.ts:15:27). Use `import.meta.dirname` instead
+2026-11-22T16:41:32.273Z	Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+2026-11-22T16:41:32.288Z	vite v8.3.8 building client environment for production...
+2026-11-22T16:41:32.300Z	transforming...
+2026-11-22T16:41:32.740Z	✓ 2124 modules transformed.
+2026-11-22T16:41:32.883Z	rendering chunks...
+2026-11-22T16:41:32.982Z	computing gzip size...
+2026-11-22T16:41:32.993Z	dist/index.html                                       1.31 kB │ gzip:   0.71 kB
+2026-11-22T16:41:32.993Z	dist/assets/index-BTw3hNrk.css                      102.44 kB │ gzip:  16.63 kB
+2026-11-22T16:41:32.993Z	dist/assets/arrow-right-zufXSGA3.js                   0.15 kB │ gzip:   0.15 kB
+2026-11-22T16:41:32.993Z	dist/assets/clock-RD3EKT9Y.js                         0.15 kB │ gzip:   0.15 kB
+2026-11-22T16:41:32.993Z	dist/assets/circle-check-Bezv-GtL.js                  0.16 kB │ gzip:   0.16 kB
+2026-11-22T16:41:32.993Z	dist/assets/calendar-BPGX_6X2.js                      0.24 kB │ gzip:   0.19 kB
+2026-11-22T16:41:32.993Z	dist/assets/book-open-DzduPP4n.js                     0.26 kB │ gzip:   0.19 kB
+2026-11-22T16:41:32.993Z	dist/assets/send-CTbWPFSd.js                          0.27 kB │ gzip:   0.22 kB
+2026-11-22T16:41:32.993Z	dist/assets/shield-check-BwlDRHu4.js                  0.30 kB │ gzip:   0.24 kB
+2026-11-22T16:41:32.993Z	dist/assets/brevoEmail-Csz0AuuR.js                    3.56 kB │ gzip:   1.44 kB
+2026-11-22T16:41:32.993Z	dist/assets/EditorialHeroCarousel-DRP6rY4A.js         3.58 kB │ gzip:   1.43 kB
+2026-11-22T16:41:32.994Z	dist/assets/CollapsibleFaqSection-Z_sKYMTo.js         4.59 kB │ gzip:   1.61 kB
+2026-11-22T16:41:32.994Z	dist/assets/audioSynthesizer-Cpt4pk9n.js              5.30 kB │ gzip:   1.39 kB
+2026-11-22T16:41:32.994Z	dist/assets/MembersPage-CO1UfDMr.js                   6.87 kB │ gzip:   2.09 kB
+2026-11-22T16:41:32.994Z	dist/assets/FAQPage-C6lLZaU0.js                       7.80 kB │ gzip:   3.01 kB
+2026-11-22T16:41:32.994Z	dist/assets/IntroductionModal-Cd2HkOso.js             7.91 kB │ gzip:   2.52 kB
+2026-11-22T16:41:32.994Z	dist/assets/CaseStudiesPage-X5bL2pbl.js               9.30 kB │ gzip:   3.36 kB
+2026-11-22T16:41:32.994Z	dist/assets/ArticleDetailPage-Bli76XCc.js             9.63 kB │ gzip:   2.84 kB
+2026-11-22T16:41:32.994Z	dist/assets/CalendarPage-DO99sSaJ.js                  9.88 kB │ gzip:   3.09 kB
+2026-11-22T16:41:32.994Z	dist/assets/JournalPage-pMBm_XKd.js                  11.93 kB │ gzip:   3.30 kB
+2026-11-22T16:41:32.994Z	dist/assets/ContactPage-D_AY8jEx.js                  13.15 kB │ gzip:   3.78 kB
+2026-11-22T16:41:32.994Z	dist/assets/SubServiceDetailPage-Df2ANpJ-.js         14.37 kB │ gzip:   3.79 kB
+2026-11-22T16:41:32.994Z	dist/assets/MembershipPage-CeV84c9H.js               15.34 kB │ gzip:   4.71 kB
+2026-11-22T16:41:32.994Z	dist/assets/LegalPages-s57-vn_8.js                   15.46 kB │ gzip:   4.72 kB
+2026-11-22T16:41:32.995Z	dist/assets/ConsortiumConciergeSection-ByQZdXI7.js   16.07 kB │ gzip:   4.38 kB
+2026-11-22T16:41:32.995Z	dist/assets/ServicesHub-D4xqoQ8z.js                  17.71 kB │ gzip:   4.81 kB
+2026-11-22T16:41:32.995Z	dist/assets/CulturalHospitalityPage-CklvpgZu.js      20.61 kB │ gzip:   6.46 kB
+2026-11-22T16:41:32.995Z	dist/assets/HiddenLondonPage-CfXQcFCR.js             21.53 kB │ gzip:   6.38 kB
+2026-11-22T16:41:32.995Z	dist/assets/ServiceDetailPage-c3wyc24S.js            23.66 kB │ gzip:   6.71 kB
+2026-11-22T16:41:32.995Z	dist/assets/carouselSlides-Cvd-lmmW.js               25.71 kB │ gzip:   6.02 kB
+2026-11-22T16:41:32.995Z	dist/assets/GlobalSearchModal-iRK4Xn4L.js            33.36 kB │ gzip:  10.08 kB
+2026-11-22T16:41:32.995Z	dist/assets/CommissionStudio-BGDP08sb.js             64.11 kB │ gzip:  14.56 kB
+2026-11-22T16:41:32.995Z	dist/assets/faqHelpers-PWv9EjZm.js                   82.35 kB │ gzip:  27.85 kB
+2026-11-22T16:41:32.995Z	dist/assets/ConsortiumPages-BjfqMHnC.js              91.12 kB │ gzip:  18.72 kB
+2026-11-22T16:41:32.995Z	dist/assets/react-DwAqIBCC.js                       292.45 kB │ gzip:  87.79 kB
+2026-11-22T16:41:32.995Z	dist/assets/index-XRcSDcnS.js                       547.05 kB │ gzip: 152.68 kB
+2026-11-22T16:41:32.995Z	
+2026-11-22T16:41:32.996Z	[plugin builtin:vite-reporter] 
+2026-11-22T16:41:32.996Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2026-11-22T16:41:32.996Z	- Using dynamic import() to code-split the application
+2026-11-22T16:41:32.996Z	- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-11-22T16:41:32.996Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2026-11-22T16:41:33.001Z	✓ built in 711ms
+2026-11-22T16:41:33.310Z	(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+2026-11-22T16:41:33.310Z	  - `__dirname` (vite.config.ts:15:27). Use `import.meta.dirname` instead
+2026-11-22T16:41:33.310Z	Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+2026-11-22T16:41:33.325Z	vite v8.3.8 building ssr environment for production...
+2026-11-22T16:41:33.335Z	transforming...
+2026-11-22T16:41:33.373Z	✓ 64 modules transformed.
+2026-11-22T16:41:33.443Z	rendering chunks...
+2026-11-22T16:41:33.474Z	computing gzip size...
+2026-11-22T16:41:33.477Z	dist-ssr/assets/rolldown-runtime-D8jQpDG7.js              0.34 kB │ gzip:  0.24 kB
+2026-11-22T16:41:33.478Z	dist-ssr/assets/brevoEmail-kCgMk_PG.js                    3.78 kB │ gzip:  1.47 kB
+2026-11-22T16:41:33.478Z	dist-ssr/assets/EditorialHeroCarousel-6UEm0PMG.js         5.86 kB │ gzip:  1.86 kB
+2026-11-22T16:41:33.478Z	dist-ssr/assets/CollapsibleFaqSection-CI_D3kgB.js         7.51 kB │ gzip:  2.24 kB
+2026-11-22T16:41:33.478Z	dist-ssr/assets/audioSynthesizer-KQY5WwE4.js              8.23 kB │ gzip:  2.09 kB
+2026-11-22T16:41:33.485Z	dist-ssr/assets/MembersPage-mi_YZDaj.js                   9.93 kB │ gzip:  2.50 kB
+2026-11-22T16:41:33.485Z	dist-ssr/assets/FAQPage-B2XEPwdH.js                      11.67 kB │ gzip:  3.70 kB
+2026-11-22T16:41:33.485Z	dist-ssr/assets/IntroductionModal-C39MaCUF.js            12.26 kB │ gzip:  3.21 kB
+2026-11-22T16:41:33.485Z	dist-ssr/assets/CaseStudiesPage-CHeKbK1l.js              12.55 kB │ gzip:  3.93 kB
+2026-11-22T16:41:33.485Z	dist-ssr/assets/ArticleDetailPage-Cy3nMy-o.js            13.66 kB │ gzip:  3.30 kB
+2026-11-22T16:41:33.485Z	dist-ssr/assets/CalendarPage-Cdf2Pib-.js                 15.28 kB │ gzip:  3.92 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/JournalPage-Cyvl5Geh.js                  18.49 kB │ gzip:  4.25 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/ContactPage-oZKqFB1I.js                  20.06 kB │ gzip:  4.66 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/LegalPages-CeOJ2lOf.js                   20.98 kB │ gzip:  5.33 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/ConsortiumConciergeSection-aVSJKHFK.js   21.73 kB │ gzip:  5.17 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/MembershipPage-Dv9pMlM5.js               22.52 kB │ gzip:  5.67 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/SubServiceDetailPage-ZzQh6hwt.js         22.71 kB │ gzip:  4.81 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/CulturalHospitalityPage-B5LUaAy-.js      24.85 kB │ gzip:  6.77 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/ServicesHub-CXxZZPOq.js                  26.99 kB │ gzip:  6.05 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/HiddenLondonPage-DDdnQFuT.js             27.79 kB │ gzip:  6.89 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/carouselSlides-DtkQ1bx4.js               30.67 kB │ gzip:  6.97 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/ServiceDetailPage-C7lJMoJX.js            33.56 kB │ gzip:  7.91 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/GlobalSearchModal-D1EGWIdM.js            44.18 kB │ gzip: 11.11 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/faqHelpers-DZ7R7IhY.js                   88.01 kB │ gzip: 28.80 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/CommissionStudio-WA2lsiv1.js             90.42 kB │ gzip: 16.94 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/ConsortiumPages-DPucAxyK.js             132.27 kB │ gzip: 22.90 kB
+2026-11-22T16:41:33.486Z	dist-ssr/assets/SmartImage-Cx5b3TiB.js                  192.35 kB │ gzip: 47.02 kB
+2026-11-22T16:41:33.486Z	dist-ssr/entry-server.js                                423.04 kB │ gzip: 92.97 kB
+2026-11-22T16:41:33.486Z	
+2026-11-22T16:41:33.487Z	✓ built in 152ms
+2026-11-22T16:41:35.176Z	Prerendered 93 routes
+2026-11-22T16:41:35.190Z	Success: Build command completed
+2026-11-22T16:41:35.686Z	Executing user deploy command: npx wrangler deploy
+2026-11-22T16:41:36.836Z	npm warn exec The following package was not found and will be installed: wrangler@4.166.0
+2026-11-22T16:41:46.858Z	npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+2026-11-22T16:41:52.245Z	
+2026-11-22T16:41:52.245Z	 ⛅️ wrangler 4.166.0
+2026-11-22T16:41:52.245Z	────────────────────
+2026-11-22T16:41:52.347Z	
+2026-11-22T16:41:52.347Z	Detected Project Settings:
+2026-11-22T16:41:52.348Z	 - Worker Name: tglc-mini
+2026-11-22T16:41:52.348Z	 - Framework: Vite
+2026-11-22T16:41:52.348Z	 - Build Command: bun run build
+2026-11-22T16:41:52.348Z	 - Output Directory: dist
+2026-11-22T16:41:52.348Z	
+2026-11-22T16:41:52.348Z	? Do you want to modify these settings?
+2026-11-22T16:41:52.348Z	🤖 Using fallback value in non-interactive context: no
+2026-11-22T16:41:52.353Z	
+2026-11-22T16:41:52.360Z	📦 Install packages:
+2026-11-22T16:41:52.361Z	 - wrangler (devDependency)
+2026-11-22T16:41:52.361Z	 - @cloudflare/vite-plugin (devDependency)
+2026-11-22T16:41:52.361Z	
+2026-11-22T16:41:52.361Z	📝 Update package.json scripts:
+2026-11-22T16:41:52.361Z	 - "deploy": "bun run build && wrangler deploy"
+2026-11-22T16:41:52.361Z	 - "preview": "bun run build && wrangler dev"
+2026-11-22T16:41:52.361Z	
+2026-11-22T16:41:52.361Z	📄 Create wrangler.jsonc:
+2026-11-22T16:41:52.361Z	  {
+2026-11-22T16:41:52.361Z	    "$schema": "node_modules/wrangler/config-schema.json",
+2026-11-22T16:41:52.361Z	    "name": "tglc-mini",
+2026-11-22T16:41:52.361Z	    "compatibility_date": "2026-11-19",
+2026-11-22T16:41:52.362Z	    "observability": {
+2026-11-22T16:41:52.362Z	      "enabled": true
+2026-11-22T16:41:52.362Z	    },
+2026-11-22T16:41:52.362Z	    "assets": {
+2026-11-22T16:41:52.362Z	      "not_found_handling": "single-page-application"
+2026-11-22T16:41:52.362Z	    }
+2026-11-22T16:41:52.362Z	  }
+2026-11-22T16:41:52.362Z	
+2026-11-22T16:41:52.368Z	🛠️  Configuring project for Vite
+2026-11-22T16:41:52.369Z	
+2026-11-22T16:41:52.369Z	? Proceed with setup?
+2026-11-22T16:41:52.369Z	🤖 Using fallback value in non-interactive context: yes
+2026-11-22T16:41:56.115Z	├ Adding Wrangler files to the .gitignore file
+2026-11-22T16:41:56.115Z	│ updated .gitignore file
+2026-11-22T16:41:56.116Z	│
+2026-11-22T16:41:56.116Z	[build] Running: bun run build
+2026-11-22T16:41:56.194Z	[build] $ bun run images && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs
+2026-11-22T16:41:56.195Z	[build] 
+2026-11-22T16:41:56.198Z	[build] $ node scripts/optimize-images.mjs
+2026-11-22T16:41:56.198Z	[build] 
+2026-11-22T16:42:02.030Z	[build] [optimize-images] Processed 109 images (0 written, 421 skipped). Manifest written to src/data/imageManifest.json.
+2026-11-22T16:42:02.030Z	[build] 
+2026-11-22T16:42:03.643Z	[build] (!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+2026-11-22T16:42:03.643Z	[build]   - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead
+2026-11-22T16:42:03.643Z	[build] Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+2026-11-22T16:42:03.643Z	[build] 
+2026-11-22T16:42:03.763Z	[build] (!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+2026-11-22T16:42:03.763Z	[build]   - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead
+2026-11-22T16:42:03.763Z	[build] Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+2026-11-22T16:42:03.763Z	[build] 
+2026-11-22T16:42:03.768Z	[build] vite v8.3.8 building client environment for production...
+2026-11-22T16:42:03.769Z	[build] 
+2026-11-22T16:42:03.782Z	[build] transforming...
+2026-11-22T16:42:03.782Z	[build] 
+2026-11-22T16:42:04.229Z	[build] ✓ 2124 modules transformed.
+2026-11-22T16:42:04.230Z	[build] 
+2026-11-22T16:42:04.439Z	[build] rendering chunks...
+2026-11-22T16:42:04.439Z	[build] 
+2026-11-22T16:42:04.546Z	[build] computing gzip size...
+2026-11-22T16:42:04.546Z	[build] 
+2026-11-22T16:42:04.553Z	[build] dist/.assetsignore                                    0.02 kB
+2026-11-22T16:42:04.553Z	[build] dist/wrangler.json                                    1.21 kB │ gzip:   0.61 kB
+2026-11-22T16:42:04.554Z	[build] dist/index.html                                       1.31 kB │ gzip:   0.71 kB
+2026-11-22T16:42:04.555Z	[build] dist/assets/index-BTw3hNrk.css                      102.44 kB │ gzip:  16.63 kB
+2026-11-22T16:42:04.555Z	[build] dist/assets/arrow-right-zufXSGA3.js                   0.15 kB │ gzip:   0.15 kB
+2026-11-22T16:42:04.555Z	[build] dist/assets/clock-RD3EKT9Y.js                         0.15 kB │ gzip:   0.15 kB
+2026-11-22T16:42:04.556Z	[build] dist/assets/circle-check-Bezv-GtL.js                  0.16 kB │ gzip:   0.16 kB
+2026-11-22T16:42:04.556Z	[build] dist/assets/calendar-BPGX_6X2.js                      0.24 kB │ gzip:   0.19 kB
+2026-11-22T16:42:04.556Z	[build] dist/assets/book-open-DzduPP4n.js                     0.26 kB │ gzip:   0.19 kB
+2026-11-22T16:42:04.556Z	[build] dist/assets/send-CTbWPFSd.js                          0.27 kB │ gzip:   0.22 kB
+2026-11-22T16:42:04.557Z	[build] dist/assets/shield-check-BwlDRHu4.js                  0.30 kB │ gzip:   0.24 kB
+2026-11-22T16:42:04.557Z	[build] dist/assets/brevoEmail-Csz0AuuR.js                    3.56 kB │ gzip:   1.44 kB
+2026-11-22T16:42:04.557Z	[build] dist/assets/EditorialHeroCarousel-DRP6rY4A.js         3.58 kB │ gzip:   1.43 kB
+2026-11-22T16:42:04.558Z	[build] dist/assets/CollapsibleFaqSection-Z_sKYMTo.js         4.59 kB │ gzip:   1.61 kB
+2026-11-22T16:42:04.558Z	[build] dist/assets/audioSynthesizer-Cpt4pk9n.js              5.30 kB │ gzip:   1.39 kB
+2026-11-22T16:42:04.559Z	[build] dist/assets/MembersPage-CO1UfDMr.js                   6.87 kB │ gzip:   2.09 kB
+2026-11-22T16:42:04.559Z	[build] dist/assets/FAQPage-C6lLZaU0.js                       7.80 kB │ gzip:   3.01 kB
+2026-11-22T16:42:04.560Z	[build] dist/assets/IntroductionModal-Cd2HkOso.js             7.91 kB │ gzip:   2.52 kB
+2026-11-22T16:42:04.560Z	[build] dist/assets/CaseStudiesPage-X5bL2pbl.js               9.30 kB │ gzip:   3.36 kB
+2026-11-22T16:42:04.561Z	[build] dist/assets/ArticleDetailPage-Bli76XCc.js             9.63 kB │ gzip:   2.84 kB
+2026-11-22T16:42:04.561Z	[build] dist/assets/CalendarPage-DO99sSaJ.js                  9.88 kB │ gzip:   3.09 kB
+2026-11-22T16:42:04.561Z	[build] dist/assets/JournalPage-pMBm_XKd.js                  11.93 kB │ gzip:   3.30 kB
+2026-11-22T16:42:04.561Z	[build] dist/assets/ContactPage-D_AY8jEx.js                  13.15 kB │ gzip:   3.78 kB
+2026-11-22T16:42:04.561Z	[build] dist/assets/SubServiceDetailPage-Df2ANpJ-.js         14.37 kB │ gzip:   3.79 kB
+2026-11-22T16:42:04.561Z	[build] dist/assets/MembershipPage-CeV84c9H.js               15.34 kB │ gzip:   4.71 kB
+2026-11-22T16:42:04.561Z	[build] dist/assets/LegalPages-s57-vn_8.js                   15.46 kB │ gzip:   4.72 kB
+2026-11-22T16:42:04.562Z	[build] dist/assets/ConsortiumConciergeSection-ByQZdXI7.js   16.07 kB │ gzip:   4.38 kB
+2026-11-22T16:42:04.562Z	[build] dist/assets/ServicesHub-D4xqoQ8z.js                  17.71 kB │ gzip:   4.81 kB
+2026-11-22T16:42:04.562Z	[build] dist/assets/CulturalHospitalityPage-CklvpgZu.js      20.61 kB │ gzip:   6.46 kB
+2026-11-22T16:42:04.562Z	[build] dist/assets/HiddenLondonPage-CfXQcFCR.js             21.53 kB │ gzip:   6.38 kB
+2026-11-22T16:42:04.562Z	[build] dist/assets/ServiceDetailPage-c3wyc24S.js            23.66 kB │ gzip:   6.71 kB
+2026-11-22T16:42:04.564Z	[build] dist/assets/carouselSlides-Cvd-lmmW.js               25.71 kB │ gzip:   6.02 kB
+2026-11-22T16:42:04.565Z	[build] dist/assets/GlobalSearchModal-iRK4Xn4L.js            33.36 kB │ gzip:  10.08 kB
+2026-11-22T16:42:04.565Z	[build] dist/assets/CommissionStudio-BGDP08sb.js             64.11 kB │ gzip:  14.56 kB
+2026-11-22T16:42:04.565Z	[build] dist/assets/faqHelpers-PWv9EjZm.js                   82.35 kB │ gzip:  27.85 kB
+2026-11-22T16:42:04.566Z	[build] dist/assets/ConsortiumPages-BjfqMHnC.js              91.12 kB │ gzip:  18.72 kB
+2026-11-22T16:42:04.566Z	[build] dist/assets/react-DwAqIBCC.js                       292.45 kB │ gzip:  87.79 kB
+2026-11-22T16:42:04.566Z	[build] dist/assets/index-XRcSDcnS.js                       547.05 kB │ gzip: 152.68 kB
+2026-11-22T16:42:04.566Z	[build] 
+2026-11-22T16:42:04.566Z	[build] 
+2026-11-22T16:42:04.566Z	[build] [plugin builtin:vite-reporter] 
+2026-11-22T16:42:04.566Z	[build] (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-11-22T16:42:04.566Z	[build] - Using dynamic import() to code-split the application
+2026-11-22T16:42:04.566Z	[build] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-11-22T16:42:04.566Z	[build] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2026-11-22T16:42:04.566Z	[build] 
+2026-11-22T16:42:04.566Z	[build] ✓ built in 793ms
+2026-11-22T16:42:04.566Z	[build] 
+2026-11-22T16:42:05.735Z	[build] (!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+2026-11-22T16:42:05.735Z	[build]   - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead
+2026-11-22T16:42:05.735Z	[build] Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+2026-11-22T16:42:05.735Z	[build] 
+2026-11-22T16:42:05.854Z	[build] (!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+2026-11-22T16:42:05.854Z	[build]   - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead
+2026-11-22T16:42:05.854Z	[build] Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+2026-11-22T16:42:05.854Z	[build] 
+2026-11-22T16:42:05.869Z	[build] (!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+2026-11-22T16:42:05.869Z	[build]   - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead
+2026-11-22T16:42:05.869Z	[build] Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+2026-11-22T16:42:05.869Z	[build] 
+2026-11-22T16:42:05.874Z	[build] vite v8.3.8 building client environment for production...
+2026-11-22T16:42:05.875Z	[build] 
+2026-11-22T16:42:05.886Z	[build] transforming...
+2026-11-22T16:42:05.886Z	[build] 
+2026-11-22T16:42:06.102Z	[build] ✓ 2120 modules transformed.
+2026-11-22T16:42:06.102Z	[build] 
+2026-11-22T16:42:06.217Z	[build] rendering chunks...
+2026-11-22T16:42:06.217Z	[build] 
+2026-11-22T16:42:06.275Z	[build] computing gzip size...
+2026-11-22T16:42:06.276Z	[build] 
+2026-11-22T16:42:06.285Z	[build] dist-ssr/.assetsignore                                    0.02 kB
+2026-11-22T16:42:06.285Z	[build] dist-ssr/wrangler.json                                    1.21 kB │ gzip:  0.61 kB
+2026-11-22T16:42:06.286Z	[build] dist-ssr/assets/check-BBU635-y.js                         0.12 kB │ gzip:  0.14 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/chevron-down-gEluR08Y.js                  0.12 kB │ gzip:  0.14 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/x-C6fOK9NT.js                             0.15 kB │ gzip:  0.15 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/arrow-right-DG4Othby.js                   0.16 kB │ gzip:  0.16 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/arrow-up-right-2rMOo6pM.js                0.16 kB │ gzip:  0.15 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/clock-CBFv9p5d.js                         0.16 kB │ gzip:  0.16 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/search-C_ZDiPrh.js                        0.17 kB │ gzip:  0.17 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/circle-check-B4X4sP9u.js                  0.17 kB │ gzip:  0.16 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/lock-Lq_avivK.js                          0.20 kB │ gzip:  0.19 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/chevron-right-2n6N-R3u.js                 0.20 kB │ gzip:  0.17 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/mail-AHehqWai.js                          0.21 kB │ gzip:  0.20 kB
+2026-11-22T16:42:06.287Z	[build] dist-ssr/assets/globe-D550rb79.js                         0.24 kB │ gzip:  0.19 kB
+2026-11-22T16:42:06.288Z	[build] dist-ssr/assets/compass-DdfXLy7l.js                       0.25 kB │ gzip:  0.20 kB
+2026-11-22T16:42:06.288Z	[build] dist-ssr/assets/calendar-DwTaV0zl.js                      0.25 kB │ gzip:  0.20 kB
+2026-11-22T16:42:06.288Z	[build] dist-ssr/assets/map-pin-7O0MGBDt.js                       0.25 kB │ gzip:  0.22 kB
+2026-11-22T16:42:06.288Z	[build] dist-ssr/assets/shield-DNEy88HA.js                        0.27 kB │ gzip:  0.22 kB
+2026-11-22T16:42:06.289Z	[build] dist-ssr/assets/book-open-BjER86qP.js                     0.27 kB │ gzip:  0.20 kB
+2026-11-22T16:42:06.289Z	[build] dist-ssr/assets/send-Cw2gXDL1.js                          0.29 kB │ gzip:  0.23 kB
+2026-11-22T16:42:06.289Z	[build] dist-ssr/assets/shield-check-DE43pS6v.js                  0.32 kB │ gzip:  0.25 kB
+2026-11-22T16:42:06.289Z	[build] dist-ssr/assets/phone-Ca6bstrO.js                         0.32 kB │ gzip:  0.23 kB
+2026-11-22T16:42:06.289Z	[build] dist-ssr/assets/createLucideIcon-Db3zGrSg.js              1.18 kB │ gzip:  0.68 kB
+2026-11-22T16:42:06.290Z	[build] dist-ssr/assets/brevoEmail-CB3PX7t6.js                    3.57 kB │ gzip:  1.45 kB
+2026-11-22T16:42:06.290Z	[build] dist-ssr/assets/EditorialHeroCarousel-BWFki-7s.js         3.63 kB │ gzip:  1.45 kB
+2026-11-22T16:42:06.290Z	[build] dist-ssr/assets/AnimatePresence-D6KLirJC.js               4.14 kB │ gzip:  1.89 kB
+2026-11-22T16:42:06.290Z	[build] dist-ssr/assets/CollapsibleFaqSection-DmZGW8yM.js         4.72 kB │ gzip:  1.67 kB
+2026-11-22T16:42:06.291Z	[build] dist-ssr/assets/MembersPage-BD4fy3O_.js                   7.05 kB │ gzip:  2.15 kB
+2026-11-22T16:42:06.291Z	[build] dist-ssr/assets/FAQPage-BRc3G-1i.js                       7.96 kB │ gzip:  3.07 kB
+2026-11-22T16:42:06.291Z	[build] dist-ssr/assets/IntroductionModal-DO2Cj-GT.js             7.99 kB │ gzip:  2.54 kB
+2026-11-22T16:42:06.291Z	[build] dist-ssr/assets/CaseStudiesPage-B2qCxInX.js               9.41 kB │ gzip:  3.40 kB
+2026-11-22T16:42:06.291Z	[build] dist-ssr/assets/ArticleDetailPage-0SLrPYR2.js             9.87 kB │ gzip:  2.93 kB
+2026-11-22T16:42:06.291Z	[build] dist-ssr/assets/CalendarPage-CXbU80IC.js                 10.05 kB │ gzip:  3.16 kB
+2026-11-22T16:42:06.291Z	[build] dist-ssr/assets/JournalPage-BGQqtzTP.js                  12.10 kB │ gzip:  3.36 kB
+2026-11-22T16:42:06.292Z	[build] dist-ssr/assets/ContactPage-7GOl_3su.js                  13.26 kB │ gzip:  3.81 kB
+2026-11-22T16:42:06.292Z	[build] dist-ssr/assets/SubServiceDetailPage-CfC-We9X.js         14.57 kB │ gzip:  3.85 kB
+2026-11-22T16:42:06.292Z	[build] dist-ssr/assets/MembershipPage-DKz_WyKG.js               15.51 kB │ gzip:  4.76 kB
+2026-11-22T16:42:06.292Z	[build] dist-ssr/assets/LegalPages-BGmjzEbu.js                   15.62 kB │ gzip:  4.82 kB
+2026-11-22T16:42:06.292Z	[build] dist-ssr/assets/ConsortiumConciergeSection-D7eqLec6.js   16.19 kB │ gzip:  4.42 kB
+2026-11-22T16:42:06.293Z	[build] dist-ssr/assets/ServicesHub-BblJFDde.js                  17.96 kB │ gzip:  4.89 kB
+2026-11-22T16:42:06.293Z	[build] dist-ssr/assets/CulturalHospitalityPage-DMUpfkl4.js      20.77 kB │ gzip:  6.52 kB
+2026-11-22T16:42:06.293Z	[build] dist-ssr/assets/HiddenLondonPage-DrNZYsGp.js             21.90 kB │ gzip:  6.54 kB
+2026-11-22T16:42:06.293Z	[build] dist-ssr/assets/ServiceDetailPage-CJU2-qD5.js            23.93 kB │ gzip:  6.80 kB
+2026-11-22T16:42:06.294Z	[build] dist-ssr/assets/carouselSlides-Cvd-lmmW.js               25.71 kB │ gzip:  6.02 kB
+2026-11-22T16:42:06.294Z	[build] dist-ssr/assets/GlobalSearchModal-B3LkOZFn.js            33.66 kB │ gzip: 10.18 kB
+2026-11-22T16:42:06.294Z	[build] dist-ssr/assets/CommissionStudio-xBn6q6x5.js             64.38 kB │ gzip: 14.66 kB
+2026-11-22T16:42:06.294Z	[build] dist-ssr/assets/faqHelpers-PWv9EjZm.js                   82.35 kB │ gzip: 27.85 kB
+2026-11-22T16:42:06.294Z	[build] dist-ssr/assets/ConsortiumPages-BbY3bHpw.js              91.53 kB │ gzip: 18.89 kB
+2026-11-22T16:42:06.295Z	[build] dist-ssr/assets/entry-server-KFazmnb6.js                117.91 kB │ gzip: 37.51 kB
+2026-11-22T16:42:06.295Z	[build] dist-ssr/assets/react-C-cYkk3m.js                       291.04 kB │ gzip: 87.14 kB
+2026-11-22T16:42:06.295Z	[build] 
+2026-11-22T16:42:06.296Z	[build] 
+2026-11-22T16:42:06.296Z	[build] ✓ built in 414ms
+2026-11-22T16:42:06.296Z	[build] 
+2026-11-22T16:42:06.376Z	[build] node:internal/modules/esm/resolve:272
+2026-11-22T16:42:06.376Z	[build]     throw new ERR_MODULE_NOT_FOUND(
+2026-11-22T16:42:06.376Z	[build]           ^
+2026-11-22T16:42:06.376Z	[build] 
+2026-11-22T16:42:06.376Z	[build] Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/opt/buildhome/repo/dist-ssr/entry-server.js' imported from /opt/buildhome/repo/scripts/prerender.mjs
+2026-11-22T16:42:06.376Z	[build]     at finalizeResolution (node:internal/modules/esm/resolve:272:11)
+2026-11-22T16:42:06.376Z	[build]     at moduleResolve (node:internal/modules/esm/resolve:879:10)
+2026-11-22T16:42:06.376Z	[build]     at defaultResolve (node:internal/modules/esm/resolve:1006:11)
+2026-11-22T16:42:06.377Z	[build]     at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)
+2026-11-22T16:42:06.377Z	[build]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)
+2026-11-22T16:42:06.377Z	[build]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)
+2026-11-22T16:42:06.377Z	[build]     at #resolve (node:internal/modules/esm/loader:687:17)
+2026-11-22T16:42:06.377Z	[build]     at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)
+2026-11-22T16:42:06.377Z	[build]     at node:internal/modules/esm/loader:636:32
+2026-11-22T16:42:06.377Z	[build]     at TracingChannel.tracePromise (node:diagnostics_channel:370:14) {
+2026-11-22T16:42:06.377Z	[build]   code: 'ERR_MODULE_NOT_FOUND',
+2026-11-22T16:42:06.377Z	[build]   url: 'file:///opt/buildhome/repo/dist-ssr/entry-server.js'
+2026-11-22T16:42:06.377Z	[build] }
+2026-11-22T16:42:06.377Z	[build] 
+2026-11-22T16:42:06.378Z	[build] 
+2026-11-22T16:42:06.378Z	[build] Node.js v24.22.1
+2026-11-22T16:42:06.379Z	[build] 
+2026-11-22T16:42:06.380Z	[build] error: script "build" exited with code 1
+2026-11-22T16:42:06.380Z	[build] 
+2026-11-22T16:42:06.440Z	✘ [ERROR] k [Error]: Process exited with non-zero status (1)
+2026-11-22T16:42:06.440Z	
+2026-11-22T16:42:06.440Z	      at I$2._waitForOutput (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:55650:93)
+2026-11-22T16:42:06.440Z	      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-11-22T16:42:06.441Z	      at async runCommand (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:78432:24)
+2026-11-22T16:42:06.441Z	      at async Object.runCommand (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:163005:4)
+2026-11-22T16:42:06.441Z	      at async runAutoConfig (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:162585:32)
+2026-11-22T16:42:06.441Z	      at async runAutoConfigLogic (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:162950:19)
+2026-11-22T16:42:06.441Z	      at async maybeRunAutoConfig (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:163066:15)
+2026-11-22T16:42:06.441Z	      at async runDeployCommandHandler (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:163266:27)
+2026-11-22T16:42:06.441Z	      at async Object.handler (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:163444:4)
+2026-11-22T16:42:06.441Z	      at async /opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:119351:21 {
+2026-11-22T16:42:06.441Z	    result: I {
+2026-11-22T16:42:06.441Z	      _process: ChildProcess {
+2026-11-22T16:42:06.441Z	        _events: [Object: null prototype] {},
+2026-11-22T16:42:06.441Z	        _eventsCount: 0,
+2026-11-22T16:42:06.441Z	        _maxListeners: undefined,
+2026-11-22T16:42:06.441Z	        _closesNeeded: 3,
+2026-11-22T16:42:06.441Z	        _closesGot: 3,
+2026-11-22T16:42:06.441Z	        connected: false,
+2026-11-22T16:42:06.441Z	        signalCode: null,
+2026-11-22T16:42:06.441Z	        exitCode: 1,
+2026-11-22T16:42:06.441Z	        killed: false,
+2026-11-22T16:42:06.441Z	        spawnfile: '/bin/sh',
+2026-11-22T16:42:06.442Z	        _handle: null,
+2026-11-22T16:42:06.442Z	        spawnargs: [Array],
+2026-11-22T16:42:06.442Z	        pid: 1215,
+2026-11-22T16:42:06.442Z	        stdin: [Socket],
+2026-11-22T16:42:06.442Z	        stdout: [Socket],
+2026-11-22T16:42:06.442Z	        stderr: [Socket],
+2026-11-22T16:42:06.442Z	        stdio: [Array],
+2026-11-22T16:42:06.442Z	        Symbol(shapeMode): false,
+2026-11-22T16:42:06.442Z	        Symbol(kCapture): false
+2026-11-22T16:42:06.442Z	      },
+2026-11-22T16:42:06.442Z	      _aborted: false,
+2026-11-22T16:42:06.442Z	      _options: {
+2026-11-22T16:42:06.442Z	        timeout: undefined,
+2026-11-22T16:42:06.442Z	        persist: false,
+2026-11-22T16:42:06.442Z	        nodeOptions: [Object],
+2026-11-22T16:42:06.442Z	        throwOnError: true,
+2026-11-22T16:42:06.442Z	        nodePath: false
+2026-11-22T16:42:06.442Z	      },
+2026-11-22T16:42:06.442Z	      _command: 'bun run build',
+2026-11-22T16:42:06.442Z	      _args: [],
+2026-11-22T16:42:06.442Z	      _resolveClose: [Function (anonymous)],
+2026-11-22T16:42:06.442Z	      _processClosed: Promise { undefined },
+2026-11-22T16:42:06.442Z	      _thrownError: undefined,
+2026-11-22T16:42:06.443Z	      _streamOut: Socket {
+2026-11-22T16:42:06.443Z	        connecting: false,
+2026-11-22T16:42:06.443Z	        _hadError: false,
+2026-11-22T16:42:06.443Z	        _parent: null,
+2026-11-22T16:42:06.443Z	        _host: null,
+2026-11-22T16:42:06.443Z	        _closeAfterHandlingError: false,
+2026-11-22T16:42:06.443Z	        _events: [Object],
+2026-11-22T16:42:06.443Z	        _readableState: [ReadableState],
+2026-11-22T16:42:06.443Z	        _writableState: [WritableState],
+2026-11-22T16:42:06.443Z	        allowHalfOpen: false,
+2026-11-22T16:42:06.443Z	        _maxListeners: undefined,
+2026-11-22T16:42:06.443Z	        _eventsCount: 5,
+2026-11-22T16:42:06.443Z	        _sockname: null,
+2026-11-22T16:42:06.443Z	        _pendingData: null,
+2026-11-22T16:42:06.443Z	        _pendingEncoding: '',
+2026-11-22T16:42:06.443Z	        server: null,
+2026-11-22T16:42:06.443Z	        _server: null,
+2026-11-22T16:42:06.443Z	        write: [Function: writeAfterFIN],
+2026-11-22T16:42:06.443Z	        Symbol(async_id_symbol): 3963,
+2026-11-22T16:42:06.443Z	        Symbol(kHandle): null,
+2026-11-22T16:42:06.443Z	        Symbol(lastWriteQueueSize): 0,
+2026-11-22T16:42:06.443Z	        Symbol(timeout): null,
+2026-11-22T16:42:06.443Z	        Symbol(kBuffer): null,
+2026-11-22T16:42:06.443Z	        Symbol(kBufferCb): null,
+2026-11-22T16:42:06.443Z	        Symbol(kBufferGen): null,
+2026-11-22T16:42:06.443Z	        Symbol(shapeMode): true,
+2026-11-22T16:42:06.443Z	        Symbol(kCapture): false,
+2026-11-22T16:42:06.443Z	        Symbol(kSetNoDelay): false,
+2026-11-22T16:42:06.443Z	        Symbol(kSetKeepAlive): false,
+2026-11-22T16:42:06.443Z	        Symbol(kSetKeepAliveInitialDelay): 0,
+2026-11-22T16:42:06.445Z	        Symbol(kSetTOS): undefined,
+2026-11-22T16:42:06.445Z	        Symbol(kBytesRead): 7835,
+2026-11-22T16:42:06.445Z	        Symbol(kBytesWritten): 0
+2026-11-22T16:42:06.446Z	      },
+2026-11-22T16:42:06.446Z	      _streamErr: Socket {
+2026-11-22T16:42:06.446Z	        connecting: false,
+2026-11-22T16:42:06.446Z	        _hadError: false,
+2026-11-22T16:42:06.446Z	        _parent: null,
+2026-11-22T16:42:06.446Z	        _host: null,
+2026-11-22T16:42:06.446Z	        _closeAfterHandlingError: false,
+2026-11-22T16:42:06.446Z	        _events: [Object],
+2026-11-22T16:42:06.447Z	        _readableState: [ReadableState],
+2026-11-22T16:42:06.447Z	        _writableState: [WritableState],
+2026-11-22T16:42:06.447Z	        allowHalfOpen: false,
+2026-11-22T16:42:06.447Z	        _maxListeners: undefined,
+2026-11-22T16:42:06.448Z	        _eventsCount: 5,
+2026-11-22T16:42:06.448Z	        _sockname: null,
+2026-11-22T16:42:06.448Z	        _pendingData: null,
+2026-11-22T16:42:06.448Z	        _pendingEncoding: '',
+2026-11-22T16:42:06.448Z	        server: null,
+2026-11-22T16:42:06.448Z	        _server: null,
+2026-11-22T16:42:06.448Z	        write: [Function: writeAfterFIN],
+2026-11-22T16:42:06.448Z	        Symbol(async_id_symbol): 3964,
+2026-11-22T16:42:06.448Z	        Symbol(kHandle): null,
+2026-11-22T16:42:06.448Z	        Symbol(lastWriteQueueSize): 0,
+2026-11-22T16:42:06.448Z	        Symbol(timeout): null,
+2026-11-22T16:42:06.448Z	        Symbol(kBuffer): null,
+2026-11-22T16:42:06.448Z	        Symbol(kBufferCb): null,
+2026-11-22T16:42:06.448Z	        Symbol(kBufferGen): null,
+2026-11-22T16:42:06.449Z	        Symbol(shapeMode): true,
+2026-11-22T16:42:06.449Z	        Symbol(kCapture): false,
+2026-11-22T16:42:06.449Z	        Symbol(kSetNoDelay): false,
+2026-11-22T16:42:06.449Z	        Symbol(kSetKeepAlive): false,
+2026-11-22T16:42:06.449Z	        Symbol(kSetKeepAliveInitialDelay): 0,
+2026-11-22T16:42:06.449Z	        Symbol(kSetTOS): undefined,
+2026-11-22T16:42:06.449Z	        Symbol(kBytesRead): 3176,
+2026-11-22T16:42:06.449Z	        Symbol(kBytesWritten): 0
+2026-11-22T16:42:06.449Z	      },
+2026-11-22T16:42:06.449Z	      _onError: [Function: _onError],
+2026-11-22T16:42:06.449Z	      _onClose: [Function: _onClose]
+2026-11-22T16:42:06.449Z	    },
+2026-11-22T16:42:06.449Z	    output: {
+2026-11-22T16:42:06.449Z	      stderr: '$ bun run images && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs\n' +
+2026-11-22T16:42:06.449Z	        '$ node scripts/optimize-images.mjs\n' +
+2026-11-22T16:42:06.449Z	        "\x1B[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:\n" +
+2026-11-22T16:42:06.450Z	        '  - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead\n' +
+2026-11-22T16:42:06.450Z	        'Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.\x1B[39m\n' +
+2026-11-22T16:42:06.450Z	        "\x1B[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:\n" +
+2026-11-22T16:42:06.450Z	        '  - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead\n' +
+2026-11-22T16:42:06.450Z	        'Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.\x1B[39m\n' +
+2026-11-22T16:42:06.450Z	        '\x1B[33m[plugin builtin:vite-reporter] \n' +
+2026-11-22T16:42:06.450Z	        '(!) Some chunks are larger than 500 kB after minification. Consider:\n' +
+2026-11-22T16:42:06.450Z	        '- Using dynamic import() to code-split the application\n' +
+2026-11-22T16:42:06.450Z	        '- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n' +
+2026-11-22T16:42:06.450Z	        '- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\x1B[39m\n' +
+2026-11-22T16:42:06.450Z	        "\x1B[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:\n" +
+2026-11-22T16:42:06.450Z	        '  - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead\n' +
+2026-11-22T16:42:06.450Z	        'Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.\x1B[39m\n' +
+2026-11-22T16:42:06.450Z	        "\x1B[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:\n" +
+2026-11-22T16:42:06.450Z	        '  - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead\n' +
+2026-11-22T16:42:06.450Z	        'Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.\x1B[39m\n' +
+2026-11-22T16:42:06.450Z	        "\x1B[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:\n" +
+2026-11-22T16:42:06.450Z	        '  - `__dirname` (vite.config.ts:14:27). Use `import.meta.dirname` instead\n' +
+2026-11-22T16:42:06.450Z	        'Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.\x1B[39m\n' +
+2026-11-22T16:42:06.450Z	        'node:internal/modules/esm/resolve:272\n' +
+2026-11-22T16:42:06.451Z	        '    throw new ERR_MODULE_NOT_FOUND(\n' +
+2026-11-22T16:42:06.451Z	        '          ^\n' +
+2026-11-22T16:42:06.451Z	        '\n' +
+2026-11-22T16:42:06.451Z	        "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/opt/buildhome/repo/dist-ssr/entry-server.js' imported from /opt/buildhome/repo/scripts/prerender.mjs\n" +
+2026-11-22T16:42:06.451Z	        '    at finalizeResolution (node:internal/modules/esm/resolve:272:11)\n' +
+2026-11-22T16:42:06.451Z	        '    at moduleResolve (node:internal/modules/esm/resolve:879:10)\n' +
+2026-11-22T16:42:06.451Z	        '    at defaultResolve (node:internal/modules/esm/resolve:1006:11)\n' +
+2026-11-22T16:42:06.451Z	        '    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)\n' +
+2026-11-22T16:42:06.451Z	        '    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)\n' +
+2026-11-22T16:42:06.451Z	        '    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)\n' +
+2026-11-22T16:42:06.452Z	        '    at #resolve (node:internal/modules/esm/loader:687:17)\n' +
+2026-11-22T16:42:06.452Z	        '    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)\n' +
+2026-11-22T16:42:06.452Z	        '    at node:internal/modules/esm/loader:636:32\n' +
+2026-11-22T16:42:06.452Z	        '    at TracingChannel.tracePromise (node:diagnostics_channel:370:14) {\n' +
+2026-11-22T16:42:06.452Z	        "  code: 'ERR_MODULE_NOT_FOUND',\n" +
+2026-11-22T16:42:06.452Z	        "  url: 'file:///opt/buildhome/repo/dist-ssr/entry-server.js'\n" +
+2026-11-22T16:42:06.452Z	        '}\n' +
+2026-11-22T16:42:06.452Z	        '\n' +
+2026-11-22T16:42:06.452Z	        'Node.js v24.22.1\n' +
+2026-11-22T16:42:06.453Z	        'error: script "build" exited with code 1\n',
+2026-11-22T16:42:06.453Z	      stdout: '[optimize-images] Processed 109 images (0 written, 421 skipped). Manifest written to src/data/imageManifest.json.\n' +
+2026-11-22T16:42:06.453Z	        '\x1B[36mvite v8.3.8 \x1B[32mbuilding client environment for production...\x1B[36m\x1B[39m\n' +
+2026-11-22T16:42:06.453Z	        'transforming...\n' +
+2026-11-22T16:42:06.453Z	        '✓ 2124 modules transformed.\n' +
+2026-11-22T16:42:06.453Z	        'rendering chunks...\n' +
+2026-11-22T16:42:06.454Z	        'computing gzip size...\n' +
+2026-11-22T16:42:06.454Z	        'dist/.assetsignore                                    0.02 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/wrangler.json                                    1.21 kB │ gzip:   0.61 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/index.html                                       1.31 kB │ gzip:   0.71 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/index-BTw3hNrk.css                      102.44 kB │ gzip:  16.63 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/arrow-right-zufXSGA3.js                   0.15 kB │ gzip:   0.15 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/clock-RD3EKT9Y.js                         0.15 kB │ gzip:   0.15 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/circle-check-Bezv-GtL.js                  0.16 kB │ gzip:   0.16 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/calendar-BPGX_6X2.js                      0.24 kB │ gzip:   0.19 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/book-open-DzduPP4n.js                     0.26 kB │ gzip:   0.19 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/send-CTbWPFSd.js                          0.27 kB │ gzip:   0.22 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/shield-check-BwlDRHu4.js                  0.30 kB │ gzip:   0.24 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/brevoEmail-Csz0AuuR.js                    3.56 kB │ gzip:   1.44 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/EditorialHeroCarousel-DRP6rY4A.js         3.58 kB │ gzip:   1.43 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/CollapsibleFaqSection-Z_sKYMTo.js         4.59 kB │ gzip:   1.61 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/audioSynthesizer-Cpt4pk9n.js              5.30 kB │ gzip:   1.39 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/MembersPage-CO1UfDMr.js                   6.87 kB │ gzip:   2.09 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/FAQPage-C6lLZaU0.js                       7.80 kB │ gzip:   3.01 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/IntroductionModal-Cd2HkOso.js             7.91 kB │ gzip:   2.52 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/CaseStudiesPage-X5bL2pbl.js               9.30 kB │ gzip:   3.36 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/ArticleDetailPage-Bli76XCc.js             9.63 kB │ gzip:   2.84 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/CalendarPage-DO99sSaJ.js                  9.88 kB │ gzip:   3.09 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/JournalPage-pMBm_XKd.js                  11.93 kB │ gzip:   3.30 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/ContactPage-D_AY8jEx.js                  13.15 kB │ gzip:   3.78 kB\n' +
+2026-11-22T16:42:06.454Z	        'dist/assets/SubServiceDetailPage-Df2ANpJ-.js         14.37 kB │ gzip:   3.79 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/MembershipPage-CeV84c9H.js               15.34 kB │ gzip:   4.71 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/LegalPages-s57-vn_8.js                   15.46 kB │ gzip:   4.72 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/ConsortiumConciergeSection-ByQZdXI7.js   16.07 kB │ gzip:   4.38 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/ServicesHub-D4xqoQ8z.js                  17.71 kB │ gzip:   4.81 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/CulturalHospitalityPage-CklvpgZu.js      20.61 kB │ gzip:   6.46 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/HiddenLondonPage-CfXQcFCR.js             21.53 kB │ gzip:   6.38 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/ServiceDetailPage-c3wyc24S.js            23.66 kB │ gzip:   6.71 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/carouselSlides-Cvd-lmmW.js               25.71 kB │ gzip:   6.02 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/GlobalSearchModal-iRK4Xn4L.js            33.36 kB │ gzip:  10.08 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/CommissionStudio-BGDP08sb.js             64.11 kB │ gzip:  14.56 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/faqHelpers-PWv9EjZm.js                   82.35 kB │ gzip:  27.85 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/ConsortiumPages-BjfqMHnC.js              91.12 kB │ gzip:  18.72 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/react-DwAqIBCC.js                       292.45 kB │ gzip:  87.79 kB\n' +
+2026-11-22T16:42:06.455Z	        'dist/assets/index-XRcSDcnS.js                       547.05 kB │ gzip: 152.68 kB\n' +
+2026-11-22T16:42:06.455Z	        '\n' +
+2026-11-22T16:42:06.455Z	        '\x1B[32m✓ built in 793ms\x1B[39m\n' +
+2026-11-22T16:42:06.455Z	        '\x1B[36mvite v8.3.8 \x1B[32mbuilding client environment for production...\x1B[36m\x1B[39m\n' +
+2026-11-22T16:42:06.455Z	        'transforming...\n' +
+2026-11-22T16:42:06.455Z	        '✓ 2120 modules transformed.\n' +
+2026-11-22T16:42:06.456Z	        'rendering chunks...\n' +
+2026-11-22T16:42:06.456Z	        'computing gzip size...\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/.assetsignore                                    0.02 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/wrangler.json                                    1.21 kB │ gzip:  0.61 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/check-BBU635-y.js                         0.12 kB │ gzip:  0.14 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/chevron-down-gEluR08Y.js                  0.12 kB │ gzip:  0.14 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/x-C6fOK9NT.js                             0.15 kB │ gzip:  0.15 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/arrow-right-DG4Othby.js                   0.16 kB │ gzip:  0.16 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/arrow-up-right-2rMOo6pM.js                0.16 kB │ gzip:  0.15 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/clock-CBFv9p5d.js                         0.16 kB │ gzip:  0.16 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/search-C_ZDiPrh.js                        0.17 kB │ gzip:  0.17 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/circle-check-B4X4sP9u.js                  0.17 kB │ gzip:  0.16 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/lock-Lq_avivK.js                          0.20 kB │ gzip:  0.19 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/chevron-right-2n6N-R3u.js                 0.20 kB │ gzip:  0.17 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/mail-AHehqWai.js                          0.21 kB │ gzip:  0.20 kB\n' +
+2026-11-22T16:42:06.456Z	        'dist-ssr/assets/globe-D550rb79.js                         0.24 kB │ gzip:  0.19 kB\n' +
+2026-11-22T16:42:06.457Z	        'dist-ssr/assets/compass-DdfXLy7l.js                       0.25 kB │ gzip:  0.20 kB\n' +
+2026-11-22T16:42:06.457Z	        'dist-ssr/assets/calendar-DwTaV0zl.js                      0.25 kB │ gzip:  0.20 kB\n' +
+2026-11-22T16:42:06.457Z	        'dist-ssr/assets/map-pin-7O0MGBDt.js                       0.25 kB │ gzip:  0.22 kB\n' +
+2026-11-22T16:42:06.457Z	        'dist-ssr/assets/shield-DNEy88HA.js                        0.27 kB │ gzip:  0.22 kB\n' +
+2026-11-22T16:42:06.457Z	        'dist-ssr/assets/book-open-BjER86qP.js                     0.27 kB │ gzip:  0.20 kB\n' +
+2026-11-22T16:42:06.457Z	        'dist-ssr/assets/send-Cw2gXDL1.js                          0.29 kB │ gzip:  0.23 kB\n' +
+2026-11-22T16:42:06.457Z	        'dist-ssr/assets/shield-check-DE43pS6v.js                  0.32 kB │ gzip:  0.25 kB\n' +
+2026-11-22T16:42:06.457Z	        'dist-ssr/assets/phone-Ca6bstrO.js                         0.32 kB │ gzip:  0.23 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/createLucideIcon-Db3zGrSg.js              1.18 kB │ gzip:  0.68 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/brevoEmail-CB3PX7t6.js                    3.57 kB │ gzip:  1.45 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/EditorialHeroCarousel-BWFki-7s.js         3.63 kB │ gzip:  1.45 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/AnimatePresence-D6KLirJC.js               4.14 kB │ gzip:  1.89 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/CollapsibleFaqSection-DmZGW8yM.js         4.72 kB │ gzip:  1.67 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/MembersPage-BD4fy3O_.js                   7.05 kB │ gzip:  2.15 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/FAQPage-BRc3G-1i.js                       7.96 kB │ gzip:  3.07 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/IntroductionModal-DO2Cj-GT.js             7.99 kB │ gzip:  2.54 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/CaseStudiesPage-B2qCxInX.js               9.41 kB │ gzip:  3.40 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/ArticleDetailPage-0SLrPYR2.js             9.87 kB │ gzip:  2.93 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/CalendarPage-CXbU80IC.js                 10.05 kB │ gzip:  3.16 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/JournalPage-BGQqtzTP.js                  12.10 kB │ gzip:  3.36 kB\n' +
+2026-11-22T16:42:06.458Z	        'dist-ssr/assets/ContactPage-7GOl_3su.js                  13.26 kB │ gzip:  3.81 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/SubServiceDetailPage-CfC-We9X.js         14.57 kB │ gzip:  3.85 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/MembershipPage-DKz_WyKG.js               15.51 kB │ gzip:  4.76 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/LegalPages-BGmjzEbu.js                   15.62 kB │ gzip:  4.82 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/ConsortiumConciergeSection-D7eqLec6.js   16.19 kB │ gzip:  4.42 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/ServicesHub-BblJFDde.js                  17.96 kB │ gzip:  4.89 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/CulturalHospitalityPage-DMUpfkl4.js      20.77 kB │ gzip:  6.52 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/HiddenLondonPage-DrNZYsGp.js             21.90 kB │ gzip:  6.54 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/ServiceDetailPage-CJU2-qD5.js            23.93 kB │ gzip:  6.80 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/carouselSlides-Cvd-lmmW.js               25.71 kB │ gzip:  6.02 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/GlobalSearchModal-B3LkOZFn.js            33.66 kB │ gzip: 10.18 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/CommissionStudio-xBn6q6x5.js             64.38 kB │ gzip: 14.66 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/faqHelpers-PWv9EjZm.js                   82.35 kB │ gzip: 27.85 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/ConsortiumPages-BbY3bHpw.js              91.53 kB │ gzip: 18.89 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/entry-server-KFazmnb6.js                117.91 kB │ gzip: 37.51 kB\n' +
+2026-11-22T16:42:06.459Z	        'dist-ssr/assets/react-C-cYkk3m.js                       291.04 kB │ gzip: 87.14 kB\n' +
+2026-11-22T16:42:06.459Z	        '\n' +
+2026-11-22T16:42:06.459Z	        '\x1B[32m✓ built in 414ms\x1B[39m\n',
+2026-11-22T16:42:06.459Z	      exitCode: 1
+2026-11-22T16:42:06.459Z	    }
+2026-11-22T16:42:06.460Z	  }
+2026-11-22T16:42:06.460Z	
+2026-11-22T16:42:06.460Z	
+2026-11-22T16:42:06.460Z	✘ [ERROR] Running custom build `bun run build` failed. There are likely more logs from your build command above.
+2026-11-22T16:42:06.460Z	
+2026-11-22T16:42:06.460Z	
+2026-11-22T16:42:06.460Z	
+2026-11-22T16:42:06.460Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-11-22T16:42:06.460Z	
+2026-11-22T16:42:06.468Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-11-22_16-41-52_014.log"
+2026-11-22T16:42:06.581Z	Failed: error occurred while running deploy command
